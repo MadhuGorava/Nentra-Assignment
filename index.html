@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5f59ca6ad3.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="registration-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="heading">Registration Form</h1>
+                    <form id="myForm">
+                        <div class="mb-3">
+                            <label for="firstame" class="label-head">Name<span class="span-ele">*</span></label>
+                            <br />
+                            <input type="text" id="firstName" class="first-name-input" placeholder="First" />
+                            <input type="text" id="lastName" class="last-name-input" placeholder="Last" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="dob" class="label-head">Date Of Birth<span class="span-ele">*</span></label>
+                            <br />
+                            <input type="date" id="dob" class="input-text" />
+                            <p class="error-msg" id="dobErrorMsg"></p>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="label-head">Email<span class="span-ele">*</span></label>
+                            <br />
+                            <input type="text" id="emial" class="input-text" placeholder="abc123@gamil.com" />
+                            <p class="error-msg" id="emailErrorMsg"></p>
+                        </div>
+                        <div class="mb-3">
+                            <label for="fatherName" class="label-head">Father's Name<span class="span-ele">*</span></label>
+                            <br />
+                            <input type="text" id="fatherFirstName" class="first-name-input" placeholder="First" />
+                            <input type="text" id="fatherLastName" class="last-name-input" placeholder="Last" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="motherName" class="label-head">Mother's Name<span class="span-ele">*</span></label>
+                            <br />
+                            <input type="text" id="motherFirstName" class="first-name-input" placeholder="First" />
+                            <input type="text" id="motherLastName" class="last-name-input" placeholder="Last" />
+                        </div>
+                        <div class="mb-3">
+                            <h1 class="formal-heading">Gender<span class="span-ele">*</span></h1>
+                            <input type="radio" class="ml-3" id="genderMale" value="Male" name="gender" />
+                            <label for="genderMale">M</label>
+                            <br />
+                            <input type="radio" class="ml-3" id="genderFemale" value="Female" name="gender" />
+                            <label for="genderFemale">F</label>
+                        </div>
+                        <div class="mb-3">
+                            <label for="nation" class="label-head">Nationality<span class="span-ele">*</span></label>
+                            <br />
+                            <input type="text" id="nation" class="input-text" />
+                        </div>
+                        <div class="mb-3">
+                            <h1 class="formal-heading">Home Address<span class="span-ele">*</span></h1>
+                            <div>
+                                <input type="text" id="address" class="input-text mb-3" placeholder="Street Address" />
+                                <br />
+                                <input type="text" id="city" class="city-input" placeholder="city" />
+                                <select id="Country" class="country-input">
+                                    <option id="options" placeholder="Country"></option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="homeNumber" class="label-head">Telephone-Home</label>
+                            <br />
+                            <input type="text" id="homeNumber" class="input-text" placeholder="### ### ####" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="personalNumber" class="label-head">Telephone-Mobile<span class="span-ele">*</span></label>
+                            <br />
+                            <input type="text" id="personalNumber" class="input-text" placeholder="### ### ####" />
+                        </div>
+                        <div class="mb-3">
+                            <h1 class="formal-heading">HSC</h1>
+                            <div>
+                                <label for="hscInstitutionName" class="label-head">Institution Name<span class="span-ele">*</span></label>
+                                <br />
+                                <input type="text" id="hscInstitutionName" class="input-text" />
+                            </div>
+                            <div>
+                                <label for="hscBoard" class="label-head">Board Name<span class="span-ele">*</span></label>
+                                <br />
+                                <input type="text" id="hscBoard" class="input-text" />
+                            </div>
+                            <div>
+                                <label for="hscScore" class="label-head">Score(in percentage)<span class="span-ele">*</span></label>
+                                <br />
+                                <input type="text" id="hscScore" class="input-text" />
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <h1 class="formal-heading">SSC</h1>
+                            <div>
+                                <label for="sscInstitutionName" class="label-head">Institution Name<span class="span-ele">*</span></label>
+                                <br />
+                                <input type="text" id="sscInstitutionName" class="input-text" />
+                            </div>
+                            <div>
+                                <label for="sscBoard" class="label-head">Board Name<span class="span-ele">*</span></label>
+                                <br />
+                                <input type="text" id="sscBoard" class="input-text" />
+                            </div>
+                            <div>
+                                <label for="sscScore" class="label-head">Score(in percentage)<span class="span-ele">*</span></label>
+                                <br />
+                                <input type="text" id="sscScore" class="input-text" />
+                            </div>
+                        </div>
+                        <div>
+                            <h1 class="formal-heading">Highest Qualification</h1>
+                            <div class="mb-3">
+                                <label for="currentDegree" class="label-head">Currently Pursuing<span class="span-ele">*</span></label>
+                                <br />
+                                <input type="text" id="currentDegree" class="input-text" />
+                            </div>
+                            <div class="mb-3">
+                                <label for="currentInstitutionName" class="label-head">Current Institution Name<span class="span-ele">*</span></label>
+                                <br />
+                                <input type="text" id="currentInstitutionName" class="input-text" />
+                            </div>
+                            <div class="mb-3">
+                                <label for="overallPercentage" class="label-head">Overall Percentage<span class="span-ele">*</span></label>
+                                <br />
+                                <input type="text" id="overallPercentage" class="input-text" />
+                            </div>
+                            <div class="mb-3">
+                                <label for="backlogs" class="label-head">Current Backlogs<span class="span-ele">*</span></label>
+                                <br />
+                                <input type="text" id="backlogs" class="input-text" />
+                            </div>
+                        </div>
+                        <div>
+                            <h1 class="formal-heading">Document Upload Page</h1>
+                            <div action="upload.php" method="post" enctype="multipart/form-data">
+                                <p>
+                                    <label for="passport">Recent passport size photograph (image size less than 4MB):</label><span class="span-ele">*</span><br>
+                                    <input type="file" name="passport" id="passport" accept="image/*" required>
+
+                                </p>
+                                <p>
+                                    <label for="hsc">HSC mark sheet (image, PDF or docs size less than 4MB):</label><span class="span-ele">*</span><br>
+                                    <input type="file" name="hsc" id="hsc" accept="image/*,.pdf,.doc,.docx" required>
+                                </p>
+                                <p>
+                                    <label for="ssc">SSC mark sheet (image, PDF or docs size less than 4MB):</label><span class="span-ele">*</span><br>
+                                    <input type="file" name="ssc" id="ssc" accept="image/*,.pdf,.doc,.docx" required>
+                                </p>
+                                <p>
+                                    <label for="allsemesters">All semesters mark sheet in a single PDF or docs (file size less than 10MB):</label><span class="span-ele">*</span><br>
+                                    <input type="file" name="allsemesters" id="allsemesters" accept=".pdf,.doc,.docx" required>
+                                </p>
+
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">SUBMIT</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
